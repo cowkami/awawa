@@ -5,11 +5,15 @@ use yew::{function_component, html, Html};
 pub fn Navbar() -> Html {
     html! {
         <nav class="navbar navbar-dark bg-dark">
-            <div classs="container-fluid">
-              <a class="navbar-brand mb-0 h1">{ "awawa" }</a>
-              <NavMenuButton />
-              <NavMenu />
+            <div class="container-fluid d-flex flex-row">
+                <div class="d-flex mx-auto">
+                    <a class="navbar-brand h1">{ "awawa" }</a>
+                </div>
+                <div class="d-flex">
+                    <NavMenuButton />
+                </div>
             </div>
+            <NavMenu />
         </nav>
     }
 }
