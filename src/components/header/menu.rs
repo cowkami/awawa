@@ -26,7 +26,7 @@ struct MenuItem {
 impl MenuItem {
     fn to_html(self) -> Html {
         html! {
-            <li class="nav-item">
+            <li class="nav-item p-2">
                 <a class="nav-link" href={ self.href }>{ self.text }</a>
             </li>
         }
@@ -41,15 +41,7 @@ pub fn NavMenu() -> Html {
             href: "#".to_string(),
         },
         MenuItem {
-            text: "Features".to_string(),
-            href: "#".to_string(),
-        },
-        MenuItem {
-            text: "Pricing".to_string(),
-            href: "#".to_string(),
-        },
-        MenuItem {
-            text: "Disabled".to_string(),
+            text: "Reset".to_string(),
             href: "#".to_string(),
         },
     ]
