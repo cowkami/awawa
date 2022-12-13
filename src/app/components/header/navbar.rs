@@ -1,5 +1,6 @@
-use super::menu::{NavMenu, NavMenuButton};
 use yew::{function_component, html, Html};
+
+use super::menu::{NavMenu, NavMenuButton};
 
 #[function_component]
 pub fn Navbar() -> Html {
